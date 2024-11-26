@@ -11,8 +11,7 @@
    $pdf->SetFont('Courier','B',16);
    $pdf->Cell(285,4,'Bueno por:',0,1,'C');
    $pdf->Image('../Ticket.png',10,5,180,300);
-
-   if(file_exists('../carritocompras.txt')){
+ if(file_exists('../carritocompras.txt')){
       $content = trim(file_get_contents('../carritocompras.txt'), PHP_EOL);
       $lineas = explode(PHP_EOL, $content);
       $total = 0;
@@ -24,8 +23,12 @@
          $pdf->Cell(160,-10,"$ " . $precioE, 0,1, 'R');
          $pdf->Cell(30,10,' ', 0,1, 'R');
          $total = $total + $precioE;
+         $pdf->Ln(93);
+         $pdf->Cell(30,120,’ ‘, 0,1, ‘R’);
       }
    }
-
+   
    $pdf->Output();
+   //Aqui se borra el Carrito de Compras
+   if(file_exists('../carritocompras.txt')) unlink("../carritocompras.txt");
 ?>
