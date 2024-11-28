@@ -24,7 +24,7 @@
          $pdf->Cell(30,10,' ', 0,1, 'R');
          $total = $total + $precioE;
          $pdf->Ln(93);
-         $pdf->Cell(30,120,’ ‘, 0,1, ‘R’);
+         $pdf->Cell(30,120,’ ‘, 0,1, 'R');
       }
    }
    
