@@ -1,9 +1,10 @@
 # Eshopper
+
 Sitio WEB de Punto de Venta de Ropa
 
-Creado por: Maribel Galindo
-Fecha: 28/10/2024
+Creado por: Jose Alejandro Cisneros
+Fecha: 28 de Octubre 2024
 
-Proyecto Final del Submódulo
+Proyecto Final de Submodulo
 
-3o de Programación Vesp.
+3o de programacion Vesp
